@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+=================
+variables
+=================
+*/
+:root {
+  /***** colors *****/
+  --pri__strong-cyan: hsl(171, 66%, 44%);
+  --pri__light-blue: hsl(233, 100%, 69%);
+  --neut__dark-grayish-blue: hsl(210, 10%, 33%);
+  --neut__grayish-blue: hsl(201, 11%, 66%);
+
+  /***** fonts *****/
+  --fs: 18px;
+  --ff: "Bai Jamjuree", sans-serif;
+}
+
+/*
+=================
+global elements
+=================
+*/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(./images/bg-header-mobile.png) no-repeat;
+  background-position: top center;
+  background-size: contain;
+  min-height: 100vh;
+  font-family: var(--ff);
+  font-size: var(--fs);
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--neut__dark-grayish-blue);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--neut__grayish-blue);
+}
+a {
+  text-decoration: none;
+  color: var(--neut__dark-grayish-blue);
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  margin: 0 0 2rem 0;
+  color: var(--neut__dark-grayish-blue);
+  font-weight: 400;
+}
+
+li a:hover {
+  color: var(--pri__strong-cyan);
+}
+
+footer {
+  background: hsla(0, 0%, 86%, 0.5);
+  width: 100%;
+  padding: 4rem 4rem 2rem 4rem;
+}
+
+/*
+=================
+global classes
+=================
+*/
+
+.container {
+  min-width: 375px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  text-align: center;
+}
+
+.big-logo {
+  width: 7rem;
+  height: 7rem;
+  margin: 2rem auto 5rem auto;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  padding: 0 0.05rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.btns button {
+  padding: 1.2rem;
+  width: 100%;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+
+.btns button:nth-child(1) {
+  background-color: var(--pri__strong-cyan);
+  box-shadow: 5px 5px 15px hsla(171, 66%, 44%, 0.5);
+  border-bottom: 2px solid hsl(174, 82%, 30%);
+  margin-bottom: 1.5rem;
+}
+
+.btns button:nth-child(2) {
+  background-color: var(--pri__light-blue);
+  box-shadow: 5px 5px 15px hsla(233, 100%, 69%, 0.5);
+  border-bottom: 2px solid hsl(233, 68%, 44%);
+  margin-bottom: 10rem;
+}
+
+.features-wrapper {
+  margin-bottom: 10rem;
+}
+
+.features-wrapper h2 {
+  margin-bottom: 1rem;
+}
+
+.features-wrapper p {
+  margin-bottom: 3rem;
+}
+
+.features-wrapper img {
+  margin-bottom: 3rem;
+}
+
+.access-clipboard {
+  margin-bottom: 10rem;
+}
+
+.access-clipboard h2 {
+  margin-bottom: 1rem;
+}
+
+.access-clipboard p {
+  margin-bottom: 3rem;
+}
+
+.supercharge {
+  margin-bottom: 10rem;
+}
+
+.supercharge h2 {
+  margin-bottom: 1rem;
+}
+
+.supercharge > p {
+  margin-bottom: 7rem;
+}
+
+.supercharge div img {
+  margin-bottom: 2rem;
+}
+
+.supercharge div p {
+  margin-bottom: 3rem;
+}
+
+.partners {
+  margin-bottom: 10rem;
+}
+
+.partners div {
+  margin-bottom: 5rem;
+  width: 8rem;
+  height: 2.5rem;
+}
+
+.download h2 {
+  margin-bottom: 1rem;
+}
+
+.download p {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.logo-small {
+  width: 4rem;
+  height: 4rem;
+  margin: 2rem auto 5rem auto;
+}
+
+.social-media-icon {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.fa-brands {
+  font-size: 2rem;
+}
+
+.fa-brands:hover {
+  color: var(--pri__strong-cyan);
+}
+
+.footer-2 {
+  background: hsla(0, 0%, 57%, 0.5);
+  width: 100%;
+  height: 2rem;
+  padding: 1rem 0 2rem 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--neut__dark-grayish-blue);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  body {
+    background: url(./images/bg-header-desktop.png) no-repeat;
+    background-position: top center;
+    background-size: auto;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+  .container {
+    min-width: 900px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  .hero {
+    height: 100vh;
+  }
+  .hero p {
+    padding: 0 26rem;
+    margin-bottom: 3rem;
+  }
+  .btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .btns button {
+    padding: 1.2rem;
+    width: 20%;
+    border-radius: 2rem;
+
+    font-size: 1.2rem;
+  }
+
+  .btns button:nth-child(1) {
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .btns button:nth-child(2) {
+    margin-bottom: 1.5rem;
+  }
+  .features-wrapper > p {
+    margin-bottom: 5rem;
+    padding: 0 24rem;
+  }
+  .features {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .features > img {
+    margin-left: -5%;
+    margin-right: 7rem;
+    width: 60rem;
+    height: 40rem;
+  }
+  .features div p {
+    padding-right: 20rem;
+    font-size: 1rem;
+  }
+  .features div {
+    margin-top: 3rem;
+  }
+  .access-clipboard p {
+    padding: 0 25rem;
+    margin-bottom: 4rem;
+  }
+  .supercharge {
+    margin-bottom: 10rem;
+  }
+
+  .supercharge > div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .supercharge > div div {
+    max-width: 400px;
+    margin-right: 2rem;
+  }
+
+  .supercharge > p {
+    margin-bottom: 5rem;
+  }
+
+  .supercharge div p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding: 0 2rem;
+  }
+  .partners {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .partners div {
+    margin-bottom: 5rem;
+    width: 10rem;
+    margin-right: 5rem;
+  }
+  .download > p {
+    padding: 0 26rem;
+  }
+  footer {
+    padding: 4rem 4rem 2rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-flow: row;
+    text-align: left;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    grid-auto-flow: row;
+  }
+  .logo-small {
+    margin: 0 12rem 0 auto;
+  }
+  .social-media-icon {
+    margin-top: 2rem;
+    margin-right: 10rem;
+  }
+}
